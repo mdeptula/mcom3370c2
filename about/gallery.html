@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Kamo's Catering</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <script>
+    fetch('../assets/html/header.html')
+        .then(res => res.text())
+        .then(html => {
+        document.getElementById('header-placeholder').innerHTML = html;
+        });
+    </script>
+
+    <main class="main-content">
+        <section class="gallery-hero hero">
+            <div class="hero-inner">
+                <p class="eyebrow">Our Work</p>
+                <h1>Culinary Gallery</h1>
+                <p>Explore the bold flavors and beautiful presentations from our recent events.</p>
+            </div>
+        </section>
+
+        <section class="gallery-container">
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=500" alt="Gumbo Dish">
+                    <div class="gallery-overlay">
+                        <h3>Classic Gumbo</h3>
+                        <p>Bold and savory</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?q=80&w=500" alt="Cajun Platter">
+                    <div class="gallery-overlay">
+                        <h3>Signature Platter</h3>
+                        <p>Mixed Cajun selection</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1559847260-dc66d52bef19?q=80&w=500" alt="Seafood Dish">
+                    <div class="gallery-overlay">
+                        <h3>Seafood Medley</h3>
+                        <p>Fresh and flavorful</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=500" alt="Rice Bowl">
+                    <div class="gallery-overlay">
+                        <h3>Dirty Rice</h3>
+                        <p>Slow-cooked perfection</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?q=80&w=500" alt="Appetizers">
+                    <div class="gallery-overlay">
+                        <h3>Appetizer Spread</h3>
+                        <p>Start the celebration</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1559847260-dc66d52bef19?q=80&w=500" alt="Dessert">
+                    <div class="gallery-overlay">
+                        <h3>Sweet Finishes</h3>
+                        <p>Decadent endings</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery-cta">
+            <h2>Ready to experience Kamo's at your event?</h2>
+            <p>Contact us to book your catering service and let us bring these flavors to your celebration.</p>
+            <a class="cover-btn" href="../contact.html">Get Started</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Kamo's Catering</p>
+    </footer>
+</body>
+</html>

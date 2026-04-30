@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials - Kamo's Catering</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <script>
+    fetch('assets/html/header.html')
+        .then(res => res.text())
+        .then(html => {
+        document.getElementById('header-placeholder').innerHTML = html;
+        });
+    </script>
+
+    <main class="main-content">
+        <section class="testimonials-hero hero">
+            <div class="hero-inner">
+                <p class="eyebrow">What They Say</p>
+                <h1>Customer Testimonials</h1>
+                <p>Hear from our satisfied clients about their Kamo's Catering experience.</p>
+            </div>
+        </section>
+
+        <section class="testimonials-container">
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"Kamo's absolutely stole the show at our wedding. Every bite was incredible, and the service was impeccable. Our guests are still talking about it!"</p>
+                    <p class="testimonial-author">— Sarah & Mike Johnson<br><span class="testimonial-event">Wedding Reception, 150 guests</span></p>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"We hired Kamo's for our corporate event and they exceeded expectations. The food was bold and delicious, and the team was professional and flexible."</p>
+                    <p class="testimonial-author">— James Chen<br><span class="testimonial-event">Corporate Gala, 200 guests</span></p>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"Best catering decision we made for our daughter's birthday. The Cajun flavors were authentic and everyone loved it. Highly recommend!"</p>
+                    <p class="testimonial-author">— Patricia Rodriguez<br><span class="testimonial-event">Birthday Celebration, 75 guests</span></p>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"Amazing food, amazing team. Kamo's catered our anniversary party and made everything so easy. The gumbo was to die for!"</p>
+                    <p class="testimonial-author">— David & Lisa Williams<br><span class="testimonial-event">Anniversary Party, 50 guests</span></p>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"From initial consultation to final bite, Kamo's was exceptional. They customized the menu to our needs and delivered beyond our expectations."</p>
+                    <p class="testimonial-author">— Thomas Martinez<br><span class="testimonial-event">Charity Fundraiser, 300 guests</span></p>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"Kamo's brought their restaurant energy to our backyard party and it was perfect. Everyone was impressed with the quality and flavor."</p>
+                    <p class="testimonial-author">— Emily Thompson<br><span class="testimonial-event">Family Gathering, 40 guests</span></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials-cta">
+            <h2>Join our list of satisfied clients</h2>
+            <p>Ready to create your own memorable event? Let us bring bold Cajun flavors to your celebration.</p>
+            <a class="cover-btn" href="contact.html">Book Your Event Today</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Kamo's Catering</p>
+    </footer>
+</body>
+</html>

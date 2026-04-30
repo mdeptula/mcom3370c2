@@ -7,18 +7,21 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html" class="active">Contact</a></li>
-        </ul>
-    </header>
+    <div id="header-placeholder"></div>
+
+    <script>
+    fetch('assets/html/header.html')
+        .then(res => res.text())
+        .then(html => {
+        document.getElementById('header-placeholder').innerHTML = html;
+        });
+    </script>
+
     <div class="main-content">
         <section class="cover">
 
             <div class="cover-inner">
-            <h1 class="cover-title">Kamo's Catering</h1>
+            <img class="cover-logo" src="./assets/png/logo.png" alt="Cover Image">
             <p class="cover-subtitle">
                 Bring bold Cajun flavors to your next event.
             </p>

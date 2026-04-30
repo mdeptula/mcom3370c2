@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Kamo's Catering</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <script>
+    fetch('assets/html/header.html')
+        .then(res => res.text())
+        .then(html => {
+        document.getElementById('header-placeholder').innerHTML = html;
+        });
+    </script>
+
+    <main class="main-content">
+        <section class="menu-hero hero">
+            <div class="hero-inner">
+                <p class="eyebrow">Culinary Selection</p>
+                <h1>Our Menu</h1>
+                <p>Bold Cajun flavors crafted for your event. All dishes available for private catering.</p>
+            </div>
+        </section>
+
+        <section class="menu-container">
+            <!-- Appetizers Section -->
+            <div class="menu-section" id="appetizers">
+                <h2 class="menu-section-title">Appetizers</h2>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Cajun Shrimp</h3>
+                            <span class="menu-price">$12</span>
+                        </div>
+                        <p class="menu-description">Blackened Gulf shrimp with spiced remoulade and corn bread</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Crawfish Cakes</h3>
+                            <span class="menu-price">$10</span>
+                        </div>
+                        <p class="menu-description">Pan-fried crawfish cakes with lemon aioli</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Dirty Deviled Eggs</h3>
+                            <span class="menu-price">$8</span>
+                        </div>
+                        <p class="menu-description">Spiced deviled eggs with crispy bacon bits</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Andouille Sausage Skewers</h3>
+                            <span class="menu-price">$11</span>
+                        </div>
+                        <p class="menu-description">Grilled andouille with peppers and onions</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Entrées Section -->
+            <div class="menu-section" id="entrees">
+                <h2 class="menu-section-title">Entrées</h2>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Gumbo Ya-Ya</h3>
+                            <span class="menu-price">$18</span>
+                        </div>
+                        <p class="menu-description">Classic dark roux gumbo with chicken, sausage, and okra. Served with rice</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Crawfish Étouffée</h3>
+                            <span class="menu-price">$20</span>
+                        </div>
+                        <p class="menu-description">Crawfish in spiced tomato sauce over rice with crusty bread</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Blackened Fish</h3>
+                            <span class="menu-price">$22</span>
+                        </div>
+                        <p class="menu-description">Freshwater fish blackened and served with seasonal vegetables</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Jambalaya Supreme</h3>
+                            <span class="menu-price">$19</span>
+                        </div>
+                        <p class="menu-description">One-pot classic with chicken, sausage, shrimp, and bold spices</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sides Section -->
+            <div class="menu-section" id="sides">
+                <h2 class="menu-section-title">Sides</h2>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Dirty Rice</h3>
+                            <span class="menu-price">$6</span>
+                        </div>
+                        <p class="menu-description">Rice cooked with meat, peppers, and bold spices</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Mac & Cheese</h3>
+                            <span class="menu-price">$5</span>
+                        </div>
+                        <p class="menu-description">Creamy three-cheese blend with crispy breadcrumb topping</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Cornbread</h3>
+                            <span class="menu-price">$4</span>
+                        </div>
+                        <p class="menu-description">Fresh-baked cornbread with a touch of honey</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Collard Greens</h3>
+                            <span class="menu-price">$5</span>
+                        </div>
+                        <p class="menu-description">Slow-cooked with smoked turkey and southern spices</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Desserts Section -->
+            <div class="menu-section" id="desserts">
+                <h2 class="menu-section-title">Desserts</h2>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Beignets</h3>
+                            <span class="menu-price">$8</span>
+                        </div>
+                        <p class="menu-description">Fried pastries dusted with powdered sugar, served warm</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Bread Pudding</h3>
+                            <span class="menu-price">$7</span>
+                        </div>
+                        <p class="menu-description">New Orleans classic with bourbon sauce</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Pecan Pie</h3>
+                            <span class="menu-price">$9</span>
+                        </div>
+                        <p class="menu-description">Buttery crust with rich pecan filling</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Pralines</h3>
+                            <span class="menu-price">$6</span>
+                        </div>
+                        <p class="menu-description">Candied pecans with brown sugar and butter</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="menu-cta">
+            <h2>Ready to bring these flavors to your event?</h2>
+            <p>Contact us to customize a menu for your celebration.</p>
+            <a class="cover-btn" href="contact.html">Book Your Catering</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Kamo's Catering</p>
+    </footer>
+</body>
+</html>
